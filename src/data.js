@@ -1,4 +1,5 @@
-import HeroImage from "/assets/hero-img.jpg";
+import HeroImage from "../assets/hero-img.jpg";
+
 
 const Image = {
   HeroImage,
@@ -6,17 +7,17 @@ const Image = {
 
 export default Image;
 
-import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/python.png"
-import Tools4 from "/assets/tools/tailwind.png";
-import Tools5 from "/assets/tools/bootstrap.png";
-import Tools6 from "/assets/tools/js.png";
-import Tools7 from "/assets/tools/Cplus.png";
-import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/CSS.png";
-import Tools10 from "/assets/tools/HTML5.svg";
-import Tools11 from "/assets/tools/ts-logo-256.png";
+import Tools1 from "../assets/tools/vscode.png";
+import Tools2 from "../assets/tools/reactjs.png";
+import Tools3 from "../assets/tools/python.png"
+import Tools4 from "../assets/tools/tailwind.png";
+import Tools5 from "../assets/tools/bootstrap.png";
+import Tools6 from "../assets/tools/js.png";
+import Tools7 from "../assets/tools/Cplus.png";
+import Tools8 from "../assets/tools/github.png";
+import Tools9 from "../assets/tools/CSS.png";
+import Tools10 from "../assets/tools/HTML5.svg";
+import Tools11 from "../assets/tools/ts-logo-256.png";
 
 export const listTools = [
   {
@@ -98,10 +99,10 @@ export const listTools = [
   },
 ];
 
-import project1 from "/assets/proyek/noble.png";
-import project2 from "/assets/proyek/Revolution.png";
-import project3 from "/assets/proyek/Food-Deleviry.png";
-import project4 from "/assets/proyek/ecommerce.png";
+import project1 from "../assets/proyek/noble.png";
+import project2 from "../assets/proyek/Revolution.png";
+import project3 from "../assets/proyek/Food-Deleviry.png";
+import project4 from "../assets/proyek/ecommerce.png";
 
 
 export const listProyek = [

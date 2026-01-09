@@ -85,7 +85,7 @@ export default function App() {
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  {listProyek.length + 1}
+                  {listProyek.length}
                   <span className="text-violet-500">+</span>
                 </h1>
                 <p className="">completed project</p>
