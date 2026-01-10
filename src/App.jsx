@@ -28,8 +28,8 @@ export default function App() {
           </p>
           <div className="flex items-center sm:gap-4  gap-2  ">
             <a
-              href="../public/MOHAMED_AYMAN_HELMY.docx"
-              download="MOhamed_Ayman_cv"
+              href="/MOHAMED_AYMAN_HELMY.docx"
+              download="MOHAMED_AYMAN_HELMY_CV"
               className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600"
               loading="lazy"
             >
