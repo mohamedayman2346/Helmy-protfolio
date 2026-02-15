@@ -1,4 +1,4 @@
-import DataImage from "./data";
+import DataImage, { Video } from "./data";
 import { listTools, listProyek } from "./data";
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
             />
             <q>Mohamed Ayman, live in Mansoura. 😁</q>
           </div>
-          <h1 className="text-5xl/tight font-bold mb-6">Hi,  " Helmy " </h1>
+          <h1 className="text-5xl/tight font-bold mb-6">Hi, " Helmy " </h1>
           <p className="text-base/loose mb-6 opacity-50">
             Ambitious Student and Front-End Developer with 1 year of intensive
             experience in building dynamic, user-friendly web interfaces using
@@ -86,7 +86,7 @@ export default function App() {
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  {listProyek.length}
+                  {listProyek.length + Video.length} 
                   <span className="text-violet-500">+</span>
                 </h1>
                 <p className="">completed project</p>
@@ -174,7 +174,12 @@ export default function App() {
               data-aos-delay={project.dad}
               data-aos-once="true"
             >
-              <img src={project.gambar} className="object-cover" alt="project-image" loading="lazy" />
+              <img
+                src={project.gambar}
+                className="object-cover"
+                alt="project-image"
+                loading="lazy"
+              />
               <div>
                 <h1 className="text-2xl font-bold my-4">{project.nama}</h1>
                 <p className="text-base/loose mb-4">{project.desk}</p>
@@ -202,20 +207,25 @@ export default function App() {
           ))}
         </div>
         {/* Ecommerce video */}
-        {/* <div className="my-5 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
-         {Video.map((project) => (
+        <div className="my-5  gap-4 ">
+          {Video.map((project) => (
             <div
               key={project.id}
-              className="p-4 bg-zinc-800 rounded-md"
+              className="p-4 bg-zinc-800 rounded-md w-full lg:w-1/2"
               data-aos="fade-up"
               data-aos-duration="1500"
               data-aos-delay={project.dad}
               data-aos-once="true"
             >
-              <video className="rounded-md h-[50vh]" preload="none" controls alt="e-commerce Video" loading="lazy" poster={project.poster} >
-                <source src={project.src}  />
-                  Your browser does not support the video tag.
-              </video>
+              <iframe
+                className="rounded h-[50vh] w-full"
+                src={project.src}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+
               <div>
                 <h1 className="text-2xl font-bold my-4">{project.nama}</h1>
                 <p className="text-base/loose mb-4">{project.desk}</p>
@@ -232,7 +242,7 @@ export default function App() {
               </div>
             </div>
           ))}
-        </div> */}
+        </div>
       </div>
       {/* contact */}
       <div className="contact mt-32 sm:p-10 p-0" id="contact">

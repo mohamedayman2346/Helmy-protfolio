@@ -18,6 +18,7 @@ import Tools8 from "../assets/tools/github.png";
 import Tools9 from "../assets/tools/CSS.png";
 import Tools10 from "../assets/tools/HTML5.svg";
 import Tools11 from "../assets/tools/ts-logo-256.png";
+import Tools12 from "../assets/tools/Symbol.png";
 
 export const listTools = [
   {
@@ -31,7 +32,7 @@ export const listTools = [
     id: 2,
     gambar: Tools2,
     nama: "React JS",
-    ket: "Framework",
+    ket: "Library",
     dad: "200",
   },
   {
@@ -97,12 +98,20 @@ export const listTools = [
     ket: "Language",
     dad: "800",
   },
+  {
+    id: 12,
+    gambar: Tools12,
+    nama: "Next JS",
+    ket: "Framework",
+    dad: "800",
+  },
 ];
 
 import project1 from "../assets/proyek/noble.png";
 import project2 from "../assets/proyek/Revolution.png";
 import project3 from "../assets/proyek/Food-Deleviry.png";
 import project4 from "../assets/proyek/ecommerce.png";
+import project5 from "../assets/proyek/lamaDev.png";
 
 
 export const listProyek = [
@@ -142,20 +151,28 @@ export const listProyek = [
     href: 'https://food-deleviry-smoky.vercel.app',
     dad: "200",
   },
+  {
+    id: 5,
+    gambar: project5,
+    nama: "Lama Project",
+    desk: "FUll Stack website use RestFul Api to Fetch data",
+    tools: ["HTML", "CSS", "Javascript", "Tailwind", "next js"],
+    href: 'https://lama-six-ochre.vercel.app/',
+    dad: "200",
+  },
  
 ];
 
-// import video1 from "/assets/proyek/ecommerce-video.mp4";
-// import poster1 from '/assets/proyek/ecommerce-poster.png';
+import poster1 from '/assets/proyek/ecommerce-poster.png';
 
-// export const Video = [
-//   {
-//     id: 1,
-//     src: video1,
-//     poster: poster1,
-//     nama: "E-commerce",
-//     desk: 'A comprehensive E-commerce platform featuring a dynamic shopping experience, secure JWT authentication, and a dual-role Admin Dashboard (Super Admin & Sales) for seamless inventory and user management. Integrated with a RESTful API for real-time data handling.',
-//     tools: ["HTML", "CSS", "Javascript", "BootStrap", "React"],
-//     dad: "200",
-//   }
-// ]
+export const Video = [
+  {
+    id: 1,
+    src: "https://www.youtube.com/embed/IIr5pWCyCTw",
+    poster: poster1,
+    nama: "E-commerce",
+    desk: 'A comprehensive E-commerce platform featuring a dynamic shopping experience, secure JWT authentication, and a dual-role Admin Dashboard (Super Admin & Sales) for seamless inventory and user management. Integrated with a RESTful API for real-time data handling.',
+    tools: ["HTML", "CSS", "Javascript", "BootStrap", "React"],
+    dad: "200",
+  }
+]
