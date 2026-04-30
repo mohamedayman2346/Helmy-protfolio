@@ -112,6 +112,7 @@ import project2 from "../assets/proyek/Revolution.png";
 import project3 from "../assets/proyek/Food-Deleviry.png";
 import project4 from "../assets/proyek/ecommerce.png";
 import project5 from "../assets/proyek/lamaDev.png";
+import project6 from "../assets/proyek/metaVersal.png";
 
 
 export const listProyek = [
@@ -131,7 +132,7 @@ export const listProyek = [
     desk: "Landing Page of AI Revolution with Responsive Web Design",
     tools: ["HTML", "CSS", "Javascript", "Tailwind", "React"],
     href: 'https://ai-revouloution.vercel.app/',
-    dad: "200",
+    dad: "400",
   },
   {
     id: 3,
@@ -140,7 +141,7 @@ export const listProyek = [
     desk: "ecommerce Project use Dummy APi",
     tools: ["HTML", "CSS", "Javascript", "Tailwind", "React"],
     href: 'https://reda-ecommerce-git-master-mohamed-aymans-projects-a200a46f.vercel.app',
-    dad: "200",
+    dad: "600",
   },
   {
     id: 4,
@@ -149,7 +150,7 @@ export const listProyek = [
     desk: "Food Deleviry Landing Page with responsive design",
     tools: ["HTML", "CSS", "Javascript", "Tailwind", "React"],
     href: 'https://food-deleviry-smoky.vercel.app',
-    dad: "200",
+    dad: "800",
   },
   {
     id: 5,
@@ -158,7 +159,16 @@ export const listProyek = [
     desk: "FUll Stack website use RestFul Api to Fetch data",
     tools: ["HTML", "CSS", "Javascript", "Tailwind", "next js"],
     href: 'https://lama-six-ochre.vercel.app/',
-    dad: "200",
+    dad: "1000",
+  },
+  {
+    id: 6,
+    gambar: project6,
+    nama: "Meta Versal",
+    desk: "Simple landing page of Meta Versal with responsive design",
+    tools: ["HTML", "CSS", "Javascript", "Tailwind", "React js"],
+    href: 'https://meta-versal.vercel.app/',
+    dad: "1200",
   },
  
 ];
