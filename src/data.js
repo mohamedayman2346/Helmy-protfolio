@@ -68,42 +68,42 @@ export const listTools = [
     gambar: Tools11,
     nama: "typescript",
     ket: "Language",
-    dad: "600",
+    dad: "700",
   },
   {
     id: 7,
     gambar: Tools7,
     nama: "C++",
     ket: "Language",
-    dad: "700",
+    dad: "800",
   },
   {
     id: 8,
     gambar: Tools8,
     nama: "Github",
     ket: "Repository",
-    dad: "800",
+    dad: "900",
   },
   {
     id: 9,
     gambar: Tools9,
     nama: "CSS 3",
     ket: "Language",
-    dad: "800",
+    dad: "1000",
   },
   {
     id: 10,
     gambar: Tools10,
     nama: "HTML 5",
     ket: "Language",
-    dad: "800",
+    dad: "1100",
   },
   {
     id: 12,
     gambar: Tools12,
     nama: "Next JS",
     ket: "Framework",
-    dad: "800",
+    dad: "1200",
   },
 ];
 
@@ -173,16 +173,37 @@ export const listProyek = [
  
 ];
 
-import poster1 from '/assets/proyek/ecommerce-poster.png';
 
 export const Video = [
   {
     id: 1,
     src: "https://www.youtube.com/embed/IIr5pWCyCTw",
-    poster: poster1,
     nama: "E-commerce",
     desk: 'A comprehensive E-commerce platform featuring a dynamic shopping experience, secure JWT authentication, and a dual-role Admin Dashboard (Super Admin & Sales) for seamless inventory and user management. Integrated with a RESTful API for real-time data handling.',
     tools: ["HTML", "CSS", "Javascript", "BootStrap", "React"],
     dad: "200",
   }
+]
+
+export const scraping = [
+  {
+    id: 1,
+    src: "https://www.youtube.com/embed/JXakYfxbz_M?si=3LHeaOp4pUV9eTlN",
+    nama: "Movie Sentiment",
+    desk: "Sentiment movie with name only",
+    tools: ["Python", "Selenium"],
+    frontHref: false,
+    BackHerf: 'https://github.com/mohamedayman2346/sentimentMove',
+    dad: "200",
+  },
+  {
+    id: 2,
+    src: "https://www.youtube.com/embed/fBqvoux90BY?si=7D7DqGkLCmSwxtC6",
+    nama: "Amazon Scraping Product",
+    desk: "​Amazon Web Scraper An automated pipeline built with FastAPI and Selenium to extract product data in real-time. (Due to cloud resource limits, full local demo video is attached).",
+    tools: ["HTML", "CSS", "Javascript", "Tailwind", "React js", "Python", "Selenium", "fast api"],
+    frontHref: "https://github.com/mohamedayman2346/ScrapingProduct-Frontend",
+    BackHerf: 'https://github.com/mohamedayman2346/ScrapingProduct-Backend',
+    dad: "400",
+  },
 ]

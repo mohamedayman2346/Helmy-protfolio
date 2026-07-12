@@ -1,5 +1,4 @@
-import DataImage, { Video } from "./data";
-import { listTools, listProyek } from "./data";
+import DataImage, { listTools, listProyek, Video, scraping } from "./data";
 
 export default function App() {
   return (
@@ -86,7 +85,7 @@ export default function App() {
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  {listProyek.length + Video.length} 
+                  {listProyek.length + Video.length + scraping.length}
                   <span className="text-violet-500">+</span>
                 </h1>
                 <p className="">completed project</p>
@@ -206,6 +205,7 @@ export default function App() {
             </div>
           ))}
         </div>
+
         {/* Ecommerce video */}
         <div className="my-5  gap-4 ">
           {Video.map((project) => (
@@ -242,6 +242,85 @@ export default function App() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* scraping Project */}
+        <div className="my-20 gap-4">
+          <h1
+            className="text-center text-4xl font-bold mb-2"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-once="true"
+          >
+            Scraping Project
+          </h1>
+          <p
+            className="text-base/loose text-center opacity-50"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
+            Projects in this section leverage automation engines like Selenium
+            and Headless Chrome. Running browser automation on free cloud
+            hosting tiers is highly inefficient due to strict CPU/RAM throttling
+            and container limits. To showcase the codebase realistically without
+            cloud-imposed performance drops, these projects are demonstrated via
+            high-quality video walkthroughs alongside their full Dockerized
+            source code."
+          </p>
+          <div className="project-box  mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+           {scraping.map((project) => (
+            <div
+              key={project.id}
+              className="p-4 bg-zinc-800 rounded-md w-full"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay={project.dad}
+              data-aos-once="true"
+            >
+              <iframe
+                className="rounded h-[50vh] w-full"
+                src={project.src}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+
+              <div>
+                <h1 className="text-2xl font-bold my-4">{project.nama}</h1>
+                <p className="text-base/loose mb-4">{project.desk}</p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tools.map((tool, index) => (
+                    <p
+                      className="py-1 px-3 border border-zinc-500 bg-zinc-600 rounded-md font-semibold "
+                      key={index}
+                    >
+                      {tool}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-8 space-y-5 text-center">
+                  {project.frontHref && <a
+                    href={`${project.frontHref}`}
+                    target="_blank"
+                    className="bg-violet-700  p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
+                  >
+                    go to Frontend Code
+                  </a>}
+                  <a
+                    href={`${project.BackHerf}`}
+                    target="_blank"
+                    className="bg-violet-700  p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600"
+                  >
+                    go to Backend Code
+                  </a>
+                </div>
+            </div>
+          ))}
+        </div>
         </div>
       </div>
       {/* contact */}
